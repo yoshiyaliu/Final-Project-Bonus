@@ -1,0 +1,377 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    font-family: Arial;
+    margin: 0;
+  }
+body.fixed-nav {
+    padding-top: 10px;
+  }
+.header{ 
+    padding: 60px;
+    font-size: 16px;
+    background: url('banner.png') center/cover no-repeat;
+    margin-bottom: -40px;
+    background-size: cover; /* Set background size to cover */
+    height: 200px; /* Set a fixed height for the header */
+}
+#navbar {
+    background-color: #475561; /* Set background color */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    transition: top 0.3s;
+    margin-top: 30px;
+}
+#navbar.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    margin-top: 0px;
+}
+#fixed-navbar {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #475561;
+    color: white;
+    text-align: center;
+}
+#navbar a {
+    color: white;
+    padding: 14px 16px;
+    font-size: 12px;
+    transition: padding 0.3s;
+}
+#navbar a:hover {
+    padding: 11px;
+    background-color: #F2BD31;
+    color: white; /* Set the color when hovering over the link */
+}
+#moreintro a {
+    color: #545454;
+}
+#moreintro a:hover {
+    color: royalblue; /* Set the color when hovering over the link */
+}
+#moreintro2 a {
+    color: #545454;
+}
+#moreintro2 a:hover {
+    color: royalblue; /* Set the color when hovering over the link */
+}
+
+#summary {
+    background-color:#E8E8E8;
+    color: #475561;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+}
+#summary h2 {
+    color:#545454;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 800; 
+    margin-top: 30px; 
+}
+#summary h3 {
+    color:#545454;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 500; 
+    margin-top: 10px; 
+}
+
+#moreintro h2 {
+    color:#545454;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 800; 
+    margin-top: 30px; 
+}
+
+#submoreintro h3 {
+    color:#545454;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 500; 
+    margin-top: 10px; 
+}
+#moreintro h3 {
+    color:#545454;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px; 
+}
+#moreintro2 {
+    background-color: #e8e8ee;
+    color: #475561;
+    font-size: 15px;
+    text-align: center;
+    padding: 60px;
+}
+#moreintro2 h2 {
+    color:#545454;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 800; 
+    margin-top: 30px; 
+}
+#moreintro2 h3 {
+    color:#545454;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px; 
+}
+.introtable3,
+.introtable4 {
+    background-color: #545454;
+    color: white;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    
+}
+
+.introtable3 th,
+.introtable4 th {
+    color: #545454;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 800;
+    margin-top: 30px;
+    height: 50px;
+    width: 136px;
+}
+
+.introtable4 th,
+.introtable4 td {
+    border-right: 20px solid #e8e8e8; /* 添加垂直區隔線 */
+    padding: 8px; /* 調整單元格內邊距 */
+}
+
+.introtable4 th:last-child,
+.introtable4 td:last-child {
+    border-right: none; /* 最後一列不需要右邊框 */
+}
+
+.introtable-clip {
+    position: absolute; /* 使用絕對定位 */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 48% 100%); 
+}
+
+.introtable5 {
+    align-content: revert;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 30px auto;
+}
+.introtable5 th {
+    color:#545454;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 800; 
+    margin-top: 30px;
+    height: 50px;
+    width: 136px;
+    
+}
+.introtable6 {
+    align-content: revert;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 30px auto;
+  
+}
+.introtable6 th {
+    color:#545454;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 800; 
+    margin-top: 30px;
+    height: 50px;
+    width: 136px;
+}
+#operation {
+    background-color: #475561; /* Set background color */
+    color: #e8e8ee;
+    text-align: center;
+    padding: 10px;
+}
+#operation h2{
+    margin-top: 30px;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 800; 
+}
+section {
+    margin: 30px 80px;          /* 區塊外部距離：上下  左右*/
+}
+table {
+    border-collapse: collapse; /* 邊框合併為單一邊框，讓表格變得更美化*/
+    width: 100%; 
+    text-align: left;              
+}
+th,td {
+    /* border: solid 3px #928f8f; 邊框底邊，設定為實線、1px */
+    padding: 16px;             /* 內距設為16px*/
+}
+td{
+    font-weight: 400;     
+}
+th {
+    font-weight: 600;          /* 表格標題字體粗細設為400*/
+    background-color:#e8e8ee; 
+    color:#475561; 
+    border: solid 5px #475561;
+}
+/* comparision */
+#comparision{
+    background-color:#e8e8e8;
+    color: #545454;
+    text-align: center;
+    padding: 5px;
+    line-height: 2;
+}
+#comparision h2{
+    margin-top: 40px;
+    color:#475561;
+    font-size: 20px;
+    font-weight: 800; 
+}
+.container{
+    border-collapse: collapse;
+    width: 100%;
+    padding: 16px;
+    font-size: 12px;
+    text-align: center; 
+}
+.row {
+    display: flex;
+}
+.col-4 {
+    flex: 1;
+    padding: 30px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 1000;
+}
+.header-column{
+    background-color:#545454;
+    color:#e8e8e8;
+    font-size: 20px;
+    font-weight: 600;
+}
+.vs-column{
+    color: #545454;
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center; /* Adjusted: Set text-align to center */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Adjusted: Center content horizontally */
+    border: solid 5px #e8e8e8;
+}
+.features-column{
+    background-color:#737373;
+    color:white;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center; 
+    font-size: 16px;
+    border: solid 5px #e8e8e8;
+    padding: 5px;
+}
+
+/* example */
+#example{
+    background-color:white;
+    color: #475561;
+    text-align: center;
+    padding: 5px;
+    line-height: 2;
+    font-size: 18px;
+}
+#example h2{
+    margin-top: 40px;
+    color: #737373;
+    font-size: 20px;
+    font-weight: 800; 
+}
+.container{
+    border-collapse: collapse;
+    width: 100%;
+    padding: 16px;
+    font-size: 12px;
+    text-align: center; 
+}
+.row-example {
+    display: flex;
+    flex-wrap: wrap; /* Add flex-wrap to ensure the rows wrap properly */
+    justify-content: center; /* Center the content horizontally */
+}
+.col-4-example {
+    flex: 0 0 calc(33.333% - 30px);
+    padding: 30px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 1000;  
+    margin: 10px; 
+}
+.header-column-example{
+    background-color:#F2BD31;
+    color:white;
+    font-size: 20px;
+}
+
+.vs-column-example{
+    color: #545454;
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center; /* Adjusted: Set text-align to center */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Adjusted: Center content horizontally */
+    border: solid 5px white;
+}
+
+.features-column-example{
+    background-color:#475561;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-size: 16px;
+    border: solid 5px white;
+    margin-left: 20px;
+}
+.solutions {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 60px; */
+}
+.solutions th {
+    color:white;
+    background-color: #F2BD31;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 800; 
+    margin-top: 30px;
+    height: 5px;
+    width: auto;
+    border: solid 10px #e8e8e8;
+    padding-top: auto;
+}
